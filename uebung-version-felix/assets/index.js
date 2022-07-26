@@ -8,6 +8,7 @@ function runApp() {
 		projectKey: "77b1823da05706642d8b4aa1e62e7742",
 		environment: "uebung",
 	});
+	
 }
 
 runApp();
@@ -26,6 +27,7 @@ function submitForm(event) {
 
 	sendData(formData);
 	console.log(formData);
+	window.location.href = 'success.html'
 }
 
 // returns the value of an input field by ID
@@ -43,6 +45,7 @@ function sendData(formData) {
 		},
 		params: formData,
 	});
+
 }
 
 
